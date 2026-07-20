@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.item {
+  border-left: 2px solid var(--color-lightest-navy);
+  padding-left: var(--spacing-sm);
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.role {
+  color: var(--color-lightest-slate);
+  font-size: 1.15rem;
+}
+
+.org {
+  color: var(--color-green);
+  font-weight: 400;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-slate);
+  white-space: nowrap;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: var(--color-slate);
+  margin-bottom: var(--spacing-xs);
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

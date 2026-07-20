@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+  padding: var(--spacing-md);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-slate);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}

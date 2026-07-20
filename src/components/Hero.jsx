@@ -1,16 +1,14 @@
+import { hero } from '../data/content.js'
 import styles from './Hero.module.css'
 
-/**
- * Landing section — name, one-line role description, and a short intro.
- * This is a placeholder to confirm the build pipeline works end to end;
- * full content and styling come in a later pass.
- */
 function Hero() {
   return (
     <section className={styles.hero}>
-      <p className={styles.greeting}>Hi, my name is</p>
-      <h1 className={styles.name}>Pedro Werneck.</h1>
-      <h2 className={styles.tagline}>I build things at the intersection of physics and machine learning.</h2>
+      <p className={styles.greeting}>{hero.greeting}</p>
+      <h1 className={styles.name}>{hero.name}</h1>
+      <h2 className={styles.tagline}>{hero.tagline}</h2>
+      <p className={styles.subtitle}>{hero.subtitle}</p>
+      <a href="#projects" className={styles.cta}>Check out my work</a>
     </section>
   )
 }

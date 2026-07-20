@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--spacing-lg);
+}
+
+.subheading {
+  color: var(--color-lightest-slate);
+  font-size: 1rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.tagList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-green);
+  border: 1px solid var(--color-lightest-navy);
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+}
+
+.awardList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

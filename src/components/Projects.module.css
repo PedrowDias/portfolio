@@ -1,0 +1,88 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.card {
+  background-color: var(--color-light-navy);
+  border-radius: 6px;
+  padding: var(--spacing-md);
+  transition: transform var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+}
+
+.title {
+  color: var(--color-lightest-slate);
+  font-size: 1.3rem;
+}
+
+.paperRef {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-green);
+  white-space: nowrap;
+}
+
+.stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-slate);
+  margin-bottom: var(--spacing-sm);
+}
+
+.stack li::after {
+  content: '·';
+  margin-left: 0.5rem;
+  color: var(--color-lightest-navy);
+}
+
+.stack li:last-child::after {
+  content: '';
+}
+
+.description {
+  margin-bottom: var(--spacing-sm);
+  max-width: 70ch;
+}
+
+.results {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.interactiveNote {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-green);
+  border-left: 2px solid var(--color-green);
+  padding-left: 0.6rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.links {
+  display: flex;
+  gap: var(--spacing-sm);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
