@@ -12,17 +12,16 @@ export const nav = [
 
 export const hero = {
   greeting: 'Hi, my name is',
-  name: 'Pedro Werneck.',
-  tagline: 'I build things at the intersection of physics and machine learning.',
+  name: 'Pedro Werneck!',
+  tagline: 'I like Physics and Computer Science!',
   subtitle:
-    "I'm a Physics & Computer Science student at the University of Toronto, currently researching beam instabilities at CERN and building ML systems from first principles.",
+    "I'm a Physics & Computer Science student at the University of Toronto, with strong interests in AI/ML research",
 }
 
 export const about = {
   paragraphs: [
-    "I'm a Physics and Computer Science double-major at the University of Toronto (4.0 GPA), currently a Research Intern at CERN and EPFL's Laboratory of Particle Accelerator Physics, working on nonlinear beam dynamics in particle accelerators.",
-    'Outside of accelerator physics, I build machine learning systems from scratch — implementing research papers end-to-end rather than relying on high-level libraries, because I want to actually understand what the tools I use are doing under the hood.',
-    "I'm also an Undergraduate Research Assistant at the Dunlap Institute for Astronomy & Astrophysics, and I've represented Brazil at national science and math olympiads.",
+    "I'm a 3rd-year Physics and Computer Science double-major student at the University of Toronto (4.0 GPA), currently a Research Intern at CERN and EPFL's Laboratory of Particle Accelerator Physics, working on nonlinear beam dynamics in particle accelerators.",
+    "I'm also a Research Assistant at the Dunlap Institute for Astronomy & Astrophysics, and I have some medals at national (Brazil) science and math olympiads.",
   ],
   skills: [
     'Python',
@@ -33,23 +32,51 @@ export const about = {
     'SQL',
     'NumPy / SciPy',
   ],
+  // Path to a profile photo — add your own image at this path in public/.
+  profilePhoto: 'images/profile.jpg',
+  travel: {
+    paragraphs: [
+      "On a more personal note, working at CERN had been a dream of mine for years (I actually wrote about it on my uni applications), so being there for this summer has been absolutely blessing.",
+      "That internship also gave me the opportunity to travel a lot, probably what I love most in life. Meeting new people, cultures, languages, places, food, is simply my favorite thing in life.",
+      "This is a map of the countries I've visited so far! As I saw somewhere, the goal is to make the size of that list higher than the age.",
+    ],
+  },
 }
+
+export const visitedCountries = [
+  'Brazil',
+  'Argentina',
+  'Bahamas',
+  'United States of America',
+  'Canada',
+  'France',
+  'Switzerland',
+  'Liechtenstein',
+  'Qatar',
+  'United Arab Emirates',
+  'Japan',
+  'Cambodia',
+  'Vietnam',
+  'Singapore',
+]
 
 export const experience = [
   {
     role: 'Research Intern',
-    org: 'CERN and EPFL',
+    org: 'CERN (European Organization for Nuclear Research) and EPFL',
     date: 'June 2026 — Aug. 2026',
+    duration: '3 months',
     location: 'Geneva, Switzerland',
     bullets: [
-      "Selected for EPFL's Excellence Research Internship Program (ERIP) in the Laboratory of Particle Accelerator Physics (LPAP), a fully funded program open to the top 10% of applicants, working under Dr. Nicolas Mounet in CERN's Accelerators and Beam Physics, Coherent Effects and Impedances (ABP-CEI) group",
-      "Generalized a direct linear Vlasov solver to nonlinear longitudinal motion, replacing DELPHI's closed-form Bessel-function kernels with a numerical, FFT-based evaluator for the nonlinear coupling kernel",
+      "Selected for EPFL's Excellence Research Internship Program (ERIP) in the Laboratory of Particle Accelerator Physics (LPAP), a fully funded program open to the top 10% students, working under Dr. Nicolas Mounet in CERN's Accelerators and Beam Physics, Coherent Effects and Impedances (ABP-CEI) group",
+      "Generalized a direct linear Vlasov solver to nonlinear longitudinal dynamics, replacing DELPHI's closed-form Bessel-function kernels with a numerical, FFT-based evaluator for the nonlinear coupling kernel",
     ],
   },
   {
-    role: 'Undergraduate Research Assistant',
+    role: 'Research Assistant',
     org: 'University of Toronto, Dunlap Institute for Astronomy & Astrophysics',
     date: 'Aug. 2025 — Present',
+    startDate: '2025-08-01',
     location: 'Toronto, Canada',
     bullets: [
       'Built an automated data pipeline to process 23TB+ of Gaia+HST astrometry data, producing a proper motion catalog of 200+ Local Group structures, deployed as a web application',
@@ -88,7 +115,7 @@ export const projects = [
       '21x per-sample inference speedup over classical solvers (0.6ms vs 12.65ms)',
     ],
     github: 'https://github.com/PedrowDias/Fourier-Neural-Operator',
-    interactive: true, // flag for the live demo, built in a later pass
+    interactive: true,
   },
   {
     title: 'Multilingual Sentence Embeddings',
@@ -101,17 +128,20 @@ export const projects = [
       '95.6% relative improvement in Precision@1 (41.4% \u2192 81.0%) by scaling training data 4x and epochs from 3 to 5',
     ],
     github: 'https://github.com/PedrowDias/multilingual-sentence-embeddings',
-    interactive: false,
+    interactive: true,
+    demoType: 'retrieval',
   },
   {
     title: 'Python for the First Time',
     paperRef: null,
     stack: ['Python'],
     description:
-      "Sole-authored a free Python book for beginners covering the memory model, runtime complexity, OOP, and exercises with solutions.",
-    results: ['Downloaded 300+ times'],
+      "Sole-authored a free Python book for beginners covering the memory model, runtime complexity, OOP, and exercises with solutions. Downloaded 300+ times.",
+    results: [],
     github: null,
     link: 'https://tinyurl.com/python-for-the-first-time',
+    // Path to the book's cover image — add it at this path in public/.
+    coverImage: 'images/python-book-cover.jpg',
     interactive: false,
   },
 ]

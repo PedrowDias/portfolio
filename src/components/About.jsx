@@ -1,25 +1,41 @@
 import { about } from '../data/content.js'
-import styles from './Section.module.css'
+import sectionStyles from './Section.module.css'
+import styles from './About.module.css'
+import WorldMap from './WorldMap.jsx'
 
 function About() {
   return (
-    <section id="about" className={styles.section}>
-      <h2 className={styles.heading}>
-        <span className={styles.number}>01.</span> About Me
+    <section id="about" className={sectionStyles.section}>
+      <h2 className={sectionStyles.heading}>
+        <span className={sectionStyles.number}>01.</span> About Me
       </h2>
-      <div className={styles.aboutGrid}>
-        <div>
+
+      {/* Block 1: text left, skills right */}
+      <div className={styles.row}>
+        <div className={styles.text}>
           {about.paragraphs.map((p, i) => (
             <p key={i} className={styles.paragraph}>{p}</p>
           ))}
         </div>
-        <ul className={styles.skillGrid}>
-          {about.skills.map((skill) => (
-            <li key={skill} className={styles.skillItem}>
-              <span className={styles.bullet}>▹</span> {skill}
-            </li>
+        <div className={styles.visual}>
+          <img
+            src={import.meta.env.BASE_URL + about.profilePhoto}
+            alt="Pedro Werneck"
+            className={styles.photo}
+          />
+        </div>
+      </div>
+
+      {/* Block 2: text right, world map left (alternating) */}
+      <div className={styles.row + ' ' + styles.rowReversed}>
+        <div className={styles.text}>
+          {about.travel.paragraphs.map((p, i) => (
+            <p key={i} className={styles.paragraph}>{p}</p>
           ))}
-        </ul>
+        </div>
+        <div className={styles.visual}>
+          <WorldMap />
+        </div>
       </div>
     </section>
   )

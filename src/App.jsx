@@ -1,5 +1,6 @@
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
+import PendulumPlayground from './components/PendulumPlayground.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
 import Skills from './components/Skills.jsx'
@@ -14,6 +15,7 @@ function App() {
       <Nav />
       <main>
         <Hero />
+        <PendulumPlayground />
         <About />
         <Experience />
         <Skills />

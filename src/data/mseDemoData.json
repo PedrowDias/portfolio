@@ -1,0 +1,352 @@
+[
+  {
+    "query": "\"For his decades of untiring effort to find peaceful solutions to international conflicts, to advance democracy and human rights, and to promote economic and social development\"",
+    "matches": [
+      {
+        "text": "\"Pour ses efforts en faveur de la paix, de la démocratie, des droits de l'homme et du développement économique et social dans le monde\"",
+        "language": "fr",
+        "score": 0.7436,
+        "correct": true
+      },
+      {
+        "text": "Los defensores y las defensoras de los derechos humanos necesitan nuevas estrategias, inspiradas por una teoría de seguridad y derechos humanos, de dignidad, libertad y justicia.",
+        "language": "es",
+        "score": 0.5077,
+        "correct": false
+      },
+      {
+        "text": "Collins discussione sulle due proposte di risoluzione sulla situazione in Turchia (doce. 1-753/81 e 1-765/81);",
+        "language": "it",
+        "score": 0.489,
+        "correct": false
+      },
+      {
+        "text": "È solo in tale missione che si comprende ed autentica il vero cammino storico dell umanità.",
+        "language": "it",
+        "score": 0.4881,
+        "correct": false
+      },
+      {
+        "text": "El estancamiento del proceso de paz en Oriente Próximo ha bloqueado una y otra vez el progreso de la reforma.",
+        "language": "es",
+        "score": 0.466,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "The Government of Canada believes a healthy physical environment is important for children.",
+    "matches": [
+      {
+        "text": "Le Gouvernement du Canada croit qu'il est important pour les enfants de vivre dans un environnement physique sain.",
+        "language": "fr",
+        "score": 0.7072,
+        "correct": true
+      },
+      {
+        "text": "Le Canada s'efforce, à l'échelon international, de soutenir par divers moyens le renforcement des institutions nationales de certains pays. Les accords sur l'environnement, complémentaires aux accords commerciaux, n'en sont qu'un exemple.",
+        "language": "fr",
+        "score": 0.3954,
+        "correct": false
+      },
+      {
+        "text": "Les Canadiens qui manipulent du PEDA en milieu de travail doivent consulter leur représentant en matière de santé et de sécurité au travail pour connaître les pratiques de manipulation sécuritaires, les lois applicables ainsi que les exigences en vertu du Système d'information sur les matières dangereuses utilisées au travail.",
+        "language": "fr",
+        "score": 0.3293,
+        "correct": false
+      },
+      {
+        "text": "Il faut aussi tenir compte des besoins des utilisateurs du point de vue des intérêts des secteurs, tels que la santé, l'éducation, le tourisme, les services financiers, les services audiovisuels et autres, mais seulement dans la mesure où il y a lieu d'établir des comparaisons intersectorielles.",
+        "language": "fr",
+        "score": 0.3264,
+        "correct": false
+      },
+      {
+        "text": "Es wäre schade, wenn China, der neue industrielleKnotenpunkt der Welt, die Vorzüge außer Acht ließe,wirtschaftlichen Nutzen aus der multinationalen Bemühung zu ziehen,die Kohlenstoffemissionen zu kontrollieren, die unausweichlich ist,wenn die globale Umwelt angenehm bleiben soll.",
+        "language": "de",
+        "score": 0.3145,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "Peter and I were in a car crash.",
+    "matches": [
+      {
+        "text": "Peter et moi étions dans un accident de voiture...",
+        "language": "fr",
+        "score": 0.7225,
+        "correct": true
+      },
+      {
+        "text": "Nos hicimos una paja en el mismo automóvil, nada importante.",
+        "language": "es",
+        "score": 0.5247,
+        "correct": false
+      },
+      {
+        "text": "Los debo haber dejado en el baúl del auto.",
+        "language": "es",
+        "score": 0.4353,
+        "correct": false
+      },
+      {
+        "text": "Él estaba haciendo arreglos por el lado de la carretera y un camión lo golpeó y no se detuvo.",
+        "language": "es",
+        "score": 0.4351,
+        "correct": false
+      },
+      {
+        "text": "E se estava lá mais alguém naquela noite?",
+        "language": "pt",
+        "score": 0.4312,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "Probably left them in the trunk of my car.",
+    "matches": [
+      {
+        "text": "Los debo haber dejado en el baúl del auto.",
+        "language": "es",
+        "score": 0.7504,
+        "correct": true
+      },
+      {
+        "text": "Eu os adquiri curvo, eu os tive empurrar, uma vez eles estavam dentro, eles não puderam adquirir fora.",
+        "language": "pt",
+        "score": 0.6145,
+        "correct": false
+      },
+      {
+        "text": "Até mandei... exumar a tua sepultura há dois meses porque estava convencido... que estavas viva.",
+        "language": "pt",
+        "score": 0.4454,
+        "correct": false
+      },
+      {
+        "text": "Di cosa parli? Sono passato da casa mia per mettere in ordine.",
+        "language": "it",
+        "score": 0.438,
+        "correct": false
+      },
+      {
+        "text": "Se levar o carro, vai ser... estou arruinado!",
+        "language": "pt",
+        "score": 0.4291,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "I also do business in Argentina, Chile... a bit in China.",
+    "matches": [
+      {
+        "text": "También hago negocios en Argentina, Chile y otro poco en China.",
+        "language": "es",
+        "score": 0.7602,
+        "correct": true
+      },
+      {
+        "text": "Als Berufs hersteller, Lieferant und Exporteur mit einer Fabrik in Taiwan, schließen unsere Hauptprodukte alle Arten beschläge schlösser.",
+        "language": "de",
+        "score": 0.4713,
+        "correct": false
+      },
+      {
+        "text": "Originária da Sibéria, é cultivada por todo o mundo.Os maiores produtores são o Egipto, a Bulgária, a França, a China, a Alemanha e o Japão.",
+        "language": "pt",
+        "score": 0.4303,
+        "correct": false
+      },
+      {
+        "text": "Prodotto interno lordo a prezzi di mercato: indicatori regionali, 1993",
+        "language": "it",
+        "score": 0.3465,
+        "correct": false
+      },
+      {
+        "text": "Entre elas, 1.126 pertenciam à União Europeia, 70 à AECL (Associação Europeia de Comércio Livre), 347 de países mediterrânicos, 406 de países da Europa Central e Oriental (PHARE), 77 da Ásia, 86 de países da América Latina, 21 dos EUA e 3 de outros países.",
+        "language": "pt",
+        "score": 0.3425,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "There was a war in my planet, and my parents died.",
+    "matches": [
+      {
+        "text": "Hubo una guerra en mi planeta y mis padres murieron.",
+        "language": "es",
+        "score": 0.8102,
+        "correct": true
+      },
+      {
+        "text": "Avevo una bella vita, buoni amici, un modesto, ma promettente futuro...",
+        "language": "it",
+        "score": 0.5198,
+        "correct": false
+      },
+      {
+        "text": "Até mandei... exumar a tua sepultura há dois meses porque estava convencido... que estavas viva.",
+        "language": "pt",
+        "score": 0.4819,
+        "correct": false
+      },
+      {
+        "text": "Io ero un diavoletto, come la maggior parte dei bambini, ma lui di certo non era un santo",
+        "language": "it",
+        "score": 0.4658,
+        "correct": false
+      },
+      {
+        "text": "Peter et moi étions dans un accident de voiture...",
+        "language": "fr",
+        "score": 0.4377,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "You'll have to address any questions to my commanding officer.",
+    "matches": [
+      {
+        "text": "Tendrá que dirigirle cualquier pregunta a mi comandante.",
+        "language": "es",
+        "score": 0.7249,
+        "correct": true
+      },
+      {
+        "text": "DER ZUSTÄNDIGE TRAEGER STELLT DIESE BESCHEINIGUNG NACH MÖGLICHKEIT VOR DER AUSREISE DES ARBEITNEHMERS AUS DEM GEBIET DES MITGLIEDSTAATS , IN DEM ER WOHNT , AUS UND GIBT DARIN GEGEBENENFALLS INSBESONDERE DIE HÖCHSTDAUER AN , FÜR DIE SACHLEISTUNGEN NACH DEN RECHTSVORSCHRIFTEN DES ZUSTÄNDIGEN STAATES GEWÄHRT WERDEN .",
+        "language": "de",
+        "score": 0.4185,
+        "correct": false
+      },
+      {
+        "text": "Se non ti spiace, torniamo a quando un'agente dell'NSA ha minacciato un cittadino.",
+        "language": "it",
+        "score": 0.4014,
+        "correct": false
+      },
+      {
+        "text": "Sinon, qu'est-ce qui pourrait vous aider à les comprendre et à les appliquer?",
+        "language": "fr",
+        "score": 0.3973,
+        "correct": false
+      },
+      {
+        "text": "relatore. Signora Presidente, onorevoli colleghi, la modifica della direttiva sui requisiti minimi di formazione per la gente di mare, che è l' oggetto della presente raccomandazione, scaturisce dalla necessità di adattare la formazione della gente di mare alle condizioni reali del trasporto marittimo, in particolare ai nuovi sviluppi tecnologici che sono introdotti a bordo delle navi e ai nuovi metodi di formazione professionale.",
+        "language": "it",
+        "score": 0.3869,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "In contrast, the best performance on the language tasks was achieved by bilingual children whose language of instruction was the same as the language of the test and whose two languages had more overlap.",
+    "matches": [
+      {
+        "text": "Por outro lado, o melhor desempenho nas tarefas de linguagem foi alcançado por crianças bilíngües cuja língua de instrução era o mesmo que a linguagem do teste e cujos dois idiomas teve mais sobreposição.",
+        "language": "pt",
+        "score": 0.7343,
+        "correct": true
+      },
+      {
+        "text": "Este artículo explora los estudios de traducción, las teorías de la equivalencia abierta y encubierta, exteriorización y domesticación, hace un balance y muestra algunas conexiones fértiles entre transcripción y traducción.",
+        "language": "es",
+        "score": 0.4235,
+        "correct": false
+      },
+      {
+        "text": "La grammatica non è mai stata il mio forte.",
+        "language": "it",
+        "score": 0.3593,
+        "correct": false
+      },
+      {
+        "text": "3.4 Protocoles de rapport suivis Toutes les différences examinées dans le rapport répondent à deux critères : elles sont significatives sur le plan statistique et importantes (c.-à-d. qu'elles ont une importance du point de vue pratique).",
+        "language": "fr",
+        "score": 0.2345,
+        "correct": false
+      },
+      {
+        "text": "Westliche Malstile und Grafiktechniken und die westliche Architektur hielten Einzug in Japan. Neue Kunstschulen wurden erÖffnet und Kunstlehrer und Professoren aus Ländern wie Italien wurden in das Land gerufen.",
+        "language": "de",
+        "score": 0.234,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "This programme was approved in 2011 in accordance with Article 6(3) of the same Regulation through the decision C(2011) 7645.",
+    "matches": [
+      {
+        "text": "Este programa foi aprovado em 2011, em conformidade com o artigo 6.o, n.o 3, do mesmo regulamento, através da Decisão C(2011) 7645.",
+        "language": "pt",
+        "score": 0.7567,
+        "correct": true
+      },
+      {
+        "text": "b) Programas pertinentes del proyecto de marco estratégico para el bienio 2006-2007 (fascículos pertinentes de A/59/6);",
+        "language": "es",
+        "score": 0.5291,
+        "correct": false
+      },
+      {
+        "text": "Anhang II der Verordnung (EG) No. 1828/2006, sofern nichts anderes bestimmt ist.",
+        "language": "de",
+        "score": 0.5062,
+        "correct": false
+      },
+      {
+        "text": "(9) Le paragraphe (3) s'applique aux frais engagés après 1996.",
+        "language": "fr",
+        "score": 0.4695,
+        "correct": false
+      },
+      {
+        "text": "Bewerbungen für das Jahr 2015/2016 sind bis zum 31.07 an die Geschäftsstelle des Rektorats zu richten und müssen folgende Unterlagen enthalten:",
+        "language": "de",
+        "score": 0.4485,
+        "correct": false
+      }
+    ]
+  },
+  {
+    "query": "apparently everyone in this town saw these UFO's.",
+    "matches": [
+      {
+        "text": "Pare che gli abitanti di questa città abbiano visto degli UFO.",
+        "language": "it",
+        "score": 0.703,
+        "correct": true
+      },
+      {
+        "text": "Estávamos na parte sul do golfo, a pescar bonitos.",
+        "language": "pt",
+        "score": 0.4108,
+        "correct": false
+      },
+      {
+        "text": "Estes homens escaparam da prisão de segurança máxima e esconderam-se em Los Angeles.",
+        "language": "pt",
+        "score": 0.4069,
+        "correct": false
+      },
+      {
+        "text": "E se estava lá mais alguém naquela noite?",
+        "language": "pt",
+        "score": 0.4,
+        "correct": false
+      },
+      {
+        "text": "Woher dachten Sie, hatte er all die schmackhaften, kleinen Hinweise.",
+        "language": "de",
+        "score": 0.3446,
+        "correct": false
+      }
+    ]
+  }
+]

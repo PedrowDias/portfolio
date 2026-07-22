@@ -1,10 +1,21 @@
-import { nav } from '../data/content.js'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { nav, contact } from '../data/content.js'
 import styles from './Nav.module.css'
 
 function Nav() {
   return (
     <header className={styles.nav}>
-      <a href="#top" className={styles.logo} aria-label="Home">PW</a>
+      <div className={styles.logoLinks} aria-label="Social links">
+        <a href={contact.socials.find((s) => s.label === 'GitHub')?.href} target="_blank" rel="noreferrer" aria-label="GitHub">
+          <FaGithub />
+        </a>
+        <a href={contact.socials.find((s) => s.label === 'LinkedIn')?.href} target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <FaLinkedin />
+        </a>
+        <a href={`mailto:${contact.email}`} aria-label="Email">
+          <FaEnvelope />
+        </a>
+      </div>
       <nav aria-label="Primary">
         <ol className={styles.list}>
           {nav.map((item, i) => (

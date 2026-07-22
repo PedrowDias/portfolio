@@ -1,6 +1,8 @@
 import { projects } from '../data/content.js'
 import sectionStyles from './Section.module.css'
 import styles from './Projects.module.css'
+import FNODemo from './FNODemo.jsx'
+import MSEDemo from './MSEDemo.jsx'
 
 function Projects() {
   return (
@@ -24,6 +26,22 @@ function Projects() {
               ))}
             </ul>
 
+            {project.coverImage && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.coverWrapper}
+              >
+                <img
+                  src={import.meta.env.BASE_URL + project.coverImage}
+                  alt={`${project.title} cover`}
+                  className={styles.coverImage}
+                />
+                <span className={styles.coverOverlay}>Read it →</span>
+              </a>
+            )}
+
             <p className={styles.description}>{project.description}</p>
 
             <ul className={styles.results}>
@@ -34,24 +52,21 @@ function Projects() {
               ))}
             </ul>
 
-            {project.interactive && (
-              <p className={styles.interactiveNote}>
-                Interactive demo coming soon — compare the trained model against a classical solver live.
-              </p>
-            )}
-
             <div className={styles.links}>
               {project.github && (
                 <a href={project.github} target="_blank" rel="noreferrer">
                   GitHub →
                 </a>
               )}
-              {project.link && (
+              {project.link && !project.coverImage && (
                 <a href={project.link} target="_blank" rel="noreferrer">
                   View →
                 </a>
               )}
             </div>
+
+            {project.demoType === 'retrieval' && <MSEDemo />}
+            {project.interactive && !project.demoType && <FNODemo />}
           </article>
         ))}
       </div>

@@ -1,20 +1,30 @@
-/* Design tokens — accessibility-checked palette.
-   Slate on Navy: 5.69:1 contrast (passes WCAG AA for body text)
-   Green on Navy: 14.1:1 contrast (passes WCAG AAA)
-   Lightest Slate on Navy: exceeds both thresholds, used for headings */
+/* Design tokens — Slate Blue + Coral palette, accessibility-checked.
+   Slate on Navy: passes WCAG AA for body text
+   Coral on Navy: high contrast, used as the accent throughout */
+
+@font-face {
+  font-family: 'PedroScript';
+  src: url('../assets/fonts/pedro-handwriting.woff2?v=1') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 :root {
-  --color-navy: #0a192f;
-  --color-light-navy: #112240;
-  --color-lightest-navy: #233554;
-  --color-slate: #8892b0;
-  --color-light-slate: #a8b2d1;
-  --color-lightest-slate: #ccd6f6;
-  --color-white: #e6f1ff;
-  --color-green: #64ffda;
+  --color-navy: #0f172a;
+  --color-light-navy: #1e293b;
+  --color-lightest-navy: #334155;
+  --color-slate: #94a3b8;
+  --color-light-slate: #cbd5e1;
+  --color-lightest-slate: #f1f5f9;
+  --color-white: #f8fafc;
+  --color-green: #fb7185;
+  --color-teal: #64ffda;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Space Grotesk', var(--font-sans);
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
+  --font-handwriting: 'PedroScript', cursive;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -46,6 +56,7 @@ body {
 
 h1, h2, h3, h4 {
   color: var(--color-lightest-slate);
+  font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.1;
 }

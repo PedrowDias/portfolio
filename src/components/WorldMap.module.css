@@ -1,0 +1,69 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  max-width: 100%;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.count {
+  color: var(--color-teal);
+}
+
+.hoverName {
+  color: var(--color-teal);
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+
+/* Light dots for contrast against the site's dark navy background —
+   the earlier near-black fill was tuned for a white background and
+   nearly disappeared here. */
+.dot {
+  fill: var(--color-lightest-slate);
+  transition: fill var(--transition-fast);
+}
+
+.dotVisited {
+  fill: var(--color-teal);
+  transition: fill var(--transition-fast);
+}
+
+/* Invisible larger circle layered under each visible dot — the real
+   hover/click target, since the small visible dot alone is too small
+   to hit reliably with a mouse. */
+.hitArea {
+  fill: transparent;
+  cursor: pointer;
+}
+
+.hitArea:hover + .dot,
+.hitArea:hover + .dotVisited {
+  fill: var(--color-white);
+}
+
+.chipList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-teal);
+  border: 1px solid var(--color-lightest-navy);
+  border-radius: 4px;
+  padding: 0.25rem 0.6rem;
+}

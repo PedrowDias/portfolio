@@ -5,6 +5,7 @@
   justify-content: center;
   max-width: var(--max-width);
   margin: 0 auto;
+  margin-bottom: -6rem;
   padding: 0 var(--spacing-md);
 }
 
@@ -16,8 +17,25 @@
 }
 
 .name {
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  font-family: var(--font-handwriting);
+  font-weight: normal;
   color: var(--color-lightest-slate);
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--color-green);
+}
+
+.cursorBlink {
+  display: inline-block;
+  color: var(--color-green);
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .tagline {

@@ -10,14 +10,21 @@
   backdrop-filter: blur(8px);
 }
 
-.logo {
+.logoLinks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--color-lightest-slate);
+}
+
+.logoLinks a {
+  color: var(--color-lightest-slate);
+  display: flex;
+}
+
+.logoLinks a:hover {
   color: var(--color-green);
-  font-family: var(--font-mono);
-  font-size: 1.4rem;
-  font-weight: 700;
-  border: 1px solid var(--color-green);
-  border-radius: 4px;
-  padding: 0.3rem 0.6rem;
 }
 
 .list {

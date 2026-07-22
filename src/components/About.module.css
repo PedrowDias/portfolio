@@ -1,0 +1,57 @@
+.row {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--spacing-lg);
+  align-items: start;
+  margin-bottom: var(--spacing-xl);
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+/* Odd rows: text left, visual right (default order) */
+.rowReversed {
+  grid-template-columns: 3fr 2fr;
+}
+
+.rowReversed .text {
+  order: 2;
+}
+
+.rowReversed .visual {
+  order: 1;
+}
+
+.paragraph {
+  margin-bottom: var(--spacing-sm);
+  max-width: 65ch;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.photo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  filter: grayscale(20%) contrast(1.05);
+  border: 2px solid var(--color-green);
+}
+
+.bullet {
+  color: var(--color-green);
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .row,
+  .rowReversed {
+    grid-template-columns: 1fr;
+  }
+  .rowReversed .text,
+  .rowReversed .visual {
+    order: initial;
+  }
+}

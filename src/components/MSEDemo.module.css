@@ -1,0 +1,81 @@
+.demo {
+  margin-top: var(--spacing-md);
+  background-color: var(--color-navy);
+  border: 1px solid var(--color-lightest-navy);
+  border-radius: 6px;
+  padding: var(--spacing-md);
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--color-slate);
+  margin-bottom: var(--spacing-sm);
+}
+
+.selectLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-light-slate);
+  margin-bottom: var(--spacing-md);
+}
+
+.select {
+  background-color: var(--color-light-navy);
+  border: 1px solid var(--color-lightest-navy);
+  border-radius: 4px;
+  padding: 0.6rem 0.8rem;
+  color: var(--color-lightest-slate);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.resultCard {
+  background-color: var(--color-light-navy);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  border: 1px solid transparent;
+}
+
+.resultCardCorrect {
+  background-color: var(--color-light-navy);
+  border-radius: 4px;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-green);
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.rank {
+  color: var(--color-slate);
+}
+
+.language {
+  color: var(--color-slate);
+}
+
+.correctBadge {
+  margin-left: auto;
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.matchText {
+  font-size: 0.95rem;
+  color: var(--color-lightest-slate);
+}
