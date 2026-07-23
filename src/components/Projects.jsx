@@ -1,12 +1,19 @@
 import { projects } from '../data/content.js'
+import { useInView } from '../hooks/useInView.js'
 import sectionStyles from './Section.module.css'
 import styles from './Projects.module.css'
 import FNODemo from './FNODemo.jsx'
 import MSEDemo from './MSEDemo.jsx'
 
 function Projects() {
+  const [ref, inView] = useInView()
+
   return (
-    <section id="projects" className={sectionStyles.section}>
+    <section
+      ref={ref}
+      id="projects"
+      className={`${sectionStyles.section} ${inView ? sectionStyles.sectionVisible : ''}`}
+    >
       <h2 className={sectionStyles.heading}>
         <span className={sectionStyles.number}>04.</span> Things I've Built
       </h2>

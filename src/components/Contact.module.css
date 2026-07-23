@@ -1,9 +1,39 @@
 .section {
-  max-width: 600px;
+  position: relative;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--spacing-xl) var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
   text-align: center;
   scroll-margin-top: 5rem;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.sectionVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.magnetBackground {
+  position: absolute;
+  top: -24vh;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 35%, black 65%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 35%, black 65%, black 100%);
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .eyebrow {
@@ -30,6 +60,8 @@
   font-family: var(--font-mono);
   font-size: 0.9rem;
   color: var(--color-green);
+  position: relative;
+  background-color: var(--color-navy);
 }
 
 .cta:hover {

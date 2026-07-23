@@ -133,6 +133,15 @@ function PendulumPlayground() {
     const distTo = (bx, by) => Math.hypot(mx - bx, my - by)
     if (distTo(x2, y2) < 16) draggingRef.current = 'bob2'
     else if (distTo(x1, y1) < 16) draggingRef.current = 'bob1'
+
+    // Route subsequent move/up events to this canvas regardless of where
+    // the cursor physically is, until pointerup — otherwise the drag
+    // releases the instant the cursor exits the canvas bounds, which
+    // feels broken (you want to be able to drag outside the box and have
+    // it keep tracking until you let go).
+    if (draggingRef.current) {
+      canvasRef.current.setPointerCapture(e.pointerId)
+    }
   }
 
   const handlePointerMove = (e) => {
@@ -201,6 +210,7 @@ function PendulumPlayground() {
   const handleReset = () => {
     stateRef.current = [...REST_STATE]
     trailRef.current = []
+    draggingRef.current = null
   }
 
   return (
@@ -214,7 +224,6 @@ function PendulumPlayground() {
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
-        onPointerLeave={handlePointerUp}
       />
       <div className={styles.controls}>
         <button type="button" onClick={handleReset} className={styles.button}>

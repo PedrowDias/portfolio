@@ -1,11 +1,18 @@
 import { about } from '../data/content.js'
+import { useInView } from '../hooks/useInView.js'
 import sectionStyles from './Section.module.css'
 import styles from './About.module.css'
 import WorldMap from './WorldMap.jsx'
 
 function About() {
+  const [ref, inView] = useInView()
+
   return (
-    <section id="about" className={sectionStyles.section}>
+    <section
+      ref={ref}
+      id="about"
+      className={`${sectionStyles.section} ${inView ? sectionStyles.sectionVisible : ''}`}
+    >
       <h2 className={sectionStyles.heading}>
         <span className={sectionStyles.number}>01.</span> About Me
       </h2>

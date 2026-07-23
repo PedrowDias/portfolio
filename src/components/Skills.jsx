@@ -1,10 +1,17 @@
 import { skills } from '../data/content.js'
+import { useInView } from '../hooks/useInView.js'
 import sectionStyles from './Section.module.css'
 import styles from './Skills.module.css'
 
 function Skills() {
+  const [ref, inView] = useInView()
+
   return (
-    <section id="skills" className={sectionStyles.section}>
+    <section
+      ref={ref}
+      id="skills"
+      className={`${sectionStyles.section} ${inView ? sectionStyles.sectionVisible : ''}`}
+    >
       <h2 className={sectionStyles.heading}>
         <span className={sectionStyles.number}>03.</span> Skills &amp; Awards
       </h2>

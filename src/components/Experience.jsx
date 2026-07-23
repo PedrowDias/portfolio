@@ -1,4 +1,5 @@
 import { experience } from '../data/content.js'
+import { useInView } from '../hooks/useInView.js'
 import sectionStyles from './Section.module.css'
 import styles from './Experience.module.css'
 
@@ -24,8 +25,14 @@ function computeDuration(startDateStr) {
 }
 
 function Experience() {
+  const [ref, inView] = useInView()
+
   return (
-    <section id="experience" className={sectionStyles.section}>
+    <section
+      ref={ref}
+      id="experience"
+      className={`${sectionStyles.section} ${inView ? sectionStyles.sectionVisible : ''}`}
+    >
       <h2 className={sectionStyles.heading}>
         <span className={sectionStyles.number}>02.</span> Where I've Worked
       </h2>

@@ -15,12 +15,12 @@ export const hero = {
   name: 'Pedro Werneck!',
   tagline: 'I like Physics and Computer Science!',
   subtitle:
-    "I'm a Physics & Computer Science student at the University of Toronto, with strong interests in AI/ML research",
+    "I'm a student at the University of Toronto, with strong interests in AI/ML research",
 }
 
 export const about = {
   paragraphs: [
-    "I'm a 3rd-year Physics and Computer Science double-major student at the University of Toronto (4.0 GPA), currently a Research Intern at CERN and EPFL's Laboratory of Particle Accelerator Physics, working on nonlinear beam dynamics in particle accelerators.",
+    "I'm a 3rd-year Physics and Computer Science double-major student at the University of Toronto (4.0 CGPA), currently a Research Intern at CERN and EPFL, working on nonlinear beam dynamics in particle accelerators.",
     "I'm also a Research Assistant at the Dunlap Institute for Astronomy & Astrophysics, and I have some medals at national (Brazil) science and math olympiads.",
   ],
   skills: [
@@ -31,14 +31,15 @@ export const about = {
     'JavaScript / React',
     'SQL',
     'NumPy / SciPy',
+      'HTML/CSS',
   ],
   // Path to a profile photo — add your own image at this path in public/.
   profilePhoto: 'images/profile.jpg',
   travel: {
     paragraphs: [
-      "On a more personal note, working at CERN had been a dream of mine for years (I actually wrote about it on my uni applications), so being there for this summer has been absolutely blessing.",
-      "That internship also gave me the opportunity to travel a lot, probably what I love most in life. Meeting new people, cultures, languages, places, food, is simply my favorite thing in life.",
-      "This is a map of the countries I've visited so far! As I saw somewhere, the goal is to make the size of that list higher than the age.",
+      "On a more personal note, working at CERN had been a dream of mine for years (I even wrote about it in my university applications!), so spending this summer here has been absolutely amazing.",
+      "That internship also gave me the opportunity to travel a lot, which is probably what I love doing most in life (along with learning)! Meeting new people, experiencing different cultures and languages, visiting new places, and trying new food are some of my favorite things to do.",
+      "This is a map of the countries I've visited so far! As I saw somewhere,     the goal is to make the number of countries I’ve visited greater than my age.",
     ],
   },
 }
@@ -68,7 +69,7 @@ export const experience = [
     duration: '3 months',
     location: 'Geneva, Switzerland',
     bullets: [
-      "Selected for EPFL's Excellence Research Internship Program (ERIP) in the Laboratory of Particle Accelerator Physics (LPAP), a fully funded program open to the top 10% students, working under Dr. Nicolas Mounet in CERN's Accelerators and Beam Physics, Coherent Effects and Impedances (ABP-CEI) group",
+      "Selected for EPFL's Excellence Research Internship Program (ERIP) in the Laboratory of Particle Accelerator Physics (LPAP), a fully funded program open to the top 10% students. Working under Dr. Nicolas Mounet in CERN's Accelerators and Beam Physics, Coherent Effects and Impedances (ABP-CEI) group",
       "Generalized a direct linear Vlasov solver to nonlinear longitudinal dynamics, replacing DELPHI's closed-form Bessel-function kernels with a numerical, FFT-based evaluator for the nonlinear coupling kernel",
     ],
   },
@@ -79,7 +80,7 @@ export const experience = [
     startDate: '2025-08-01',
     location: 'Toronto, Canada',
     bullets: [
-      'Built an automated data pipeline to process 23TB+ of Gaia+HST astrometry data, producing a proper motion catalog of 200+ Local Group structures, deployed as a web application',
+      'Built an automated data pipeline to process 23TB+ of Gaia+HST astrometry data, producing an interactive proper motion catalog of 200+ Local Group structures, deployed as a web application',
       'Applied statistical modeling and kinematic analyses to study galaxy rotation and stellar stream–dark matter interactions, generating 25 plots to evaluate BP3M improvements on proper motion measurements',
     ],
   },
@@ -108,7 +109,7 @@ export const projects = [
     paperRef: 'Li et al., 2021',
     stack: ['Python', 'PyTorch', 'NumPy'],
     description:
-      'Implemented a Fourier Neural Operator from scratch for the 1D Burgers and 2D Navier-Stokes equations, including finite-difference and pseudo-spectral solvers, an MLP baseline, and spectral convolution layers in Fourier space.',
+      'Implemented a Fourier Neural Operator for the 1D Burgers and 2D Navier-Stokes equations, including finite-difference and pseudo-spectral solvers, an MLP baseline, and spectral convolution layers in Fourier space.',
     results: [
       '15x lower test error than the MLP baseline (0.076 vs 1.14 relative L2)',
       'Resolution-invariant generalization to 256-point grids trained only on 32–128 points',
@@ -122,7 +123,7 @@ export const projects = [
     paperRef: 'Reimers & Gurevych, 2020',
     stack: ['Python', 'PyTorch', 'Transformers'],
     description:
-      'Implemented multilingual sentence embeddings from scratch via knowledge distillation, training a multilingual student (XLM-RoBERTa) to match a frozen English teacher (MiniLM) across 5 languages.',
+      'Implemented multilingual sentence embeddings via knowledge distillation, training a multilingual student (XLM-RoBERTa) to match a frozen English teacher (MiniLM) across 5 languages.',
     results: [
       '81.0% average Precision@1 and 85.7% average MRR on cross-lingual retrieval against a 500-candidate pool',
       '95.6% relative improvement in Precision@1 (41.4% \u2192 81.0%) by scaling training data 4x and epochs from 3 to 5',
@@ -136,22 +137,21 @@ export const projects = [
     paperRef: null,
     stack: ['Python'],
     description:
-      "Sole-authored a free Python book for beginners covering the memory model, runtime complexity, OOP, and exercises with solutions. Downloaded 300+ times.",
+      "Authored a free Python book for beginners covering the memory model, runtime complexity, OOP, and exercises with solutions. Downloaded 300+ times.",
     results: [],
     github: null,
     link: 'https://tinyurl.com/python-for-the-first-time',
-    // Path to the book's cover image — add it at this path in public/.
     coverImage: 'images/python-book-cover.jpg',
     interactive: false,
   },
 ]
 
 export const contact = {
-  heading: "What's Next?",
-  subheading: 'Get In Touch',
+  heading: "Contact Me",
+  subheading: 'Let\'s Get In Touch!',
   body:
-    "I'm always interested in hearing about new opportunities in ML and software engineering. Whether you have a question or just want to say hi, I'll try my best to get back to you.",
-  email: 'pedro.werneck@mail.utoronto.ca',
+    "No need to do all that formal \"Dear Pedro, I hope this email finds you well...\", just send me a message! I'm always available and open to chat with new people :)",
+  email: 'pedrowcdias@gmail.com',
   socials: [
     { label: 'GitHub', href: 'https://github.com/PedrowDias' },
     { label: 'LinkedIn', href: 'https://linkedin.com/in/pedrowdias' },

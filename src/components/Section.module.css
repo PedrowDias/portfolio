@@ -1,8 +1,16 @@
 .section {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--spacing-xl) var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md);
   scroll-margin-top: 5rem;
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.sectionVisible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .heading {

@@ -5,6 +5,8 @@
 }
 
 .card {
+  position: relative;
+  z-index: 1;
   background-color: var(--color-light-navy);
   border-radius: 6px;
   padding: var(--spacing-md);

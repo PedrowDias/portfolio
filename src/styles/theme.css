@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'PedroScript';
-  src: url('../assets/fonts/pedro-handwriting.woff2?v=1') format('woff2');
+  src: url('../assets/fonts/handwriting-font.ttf?v=2') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -21,8 +21,8 @@
   --color-green: #fb7185;
   --color-teal: #64ffda;
 
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Space Grotesk', var(--font-sans);
+  --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Poppins', var(--font-sans);
   --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Roboto Mono', monospace;
   --font-handwriting: 'PedroScript', cursive;
 

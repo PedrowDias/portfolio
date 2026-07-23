@@ -1,0 +1,23 @@
+.wrapper {
+  position: relative;
+}
+
+.dotFieldLayer {
+  /* Full-bleed: breaks out of any parent max-width to span the full
+     viewport width, regardless of how narrow the content column above it is. */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.9;
+  /* Fades out toward the bottom edge so the transition into the next
+     section is smooth rather than a hard cutoff. */
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+}

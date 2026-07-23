@@ -6,12 +6,6 @@ function randomBetween(min, max) {
   return min + Math.random() * (max - min)
 }
 
-/**
- * Simulates natural typing: irregular per-letter timing (slower after
- * spaces/punctuation, like a real pause in thought), and an occasional
- * typo that gets backspaced and corrected — rather than a perfectly even
- * character-by-character reveal, which reads as robotic.
- */
 function useTypewriter(text) {
   const [displayed, setDisplayed] = useState('')
 
@@ -57,7 +51,7 @@ function useTypewriter(text) {
       const pause = /[ ,.]/.test(nextChar)
         ? randomBetween(160, 320)
         : Math.random() < 0.35
-          ? randomBetween(15, 45) // occasional fast burst, like real typing
+          ? randomBetween(15, 45)
           : randomBetween(50, 140)
       timeoutId = setTimeout(typeNext, pause)
     }
@@ -81,7 +75,14 @@ function Hero() {
     <section className={styles.hero}>
       <p className={styles.greeting}>{hero.greeting}</p>
       <h1 className={styles.name}>
-        {typedName}
+        {doneTyping ? (
+          <>
+            {hero.name.slice(0, -1)}
+            <span className={styles.exclamation}>{hero.name.slice(-1)}</span>
+          </>
+        ) : (
+          typedName
+        )}
         <span className={doneTyping ? styles.cursorBlink : styles.cursor}>|</span>
       </h1>
       <h2 className={styles.tagline}>{hero.tagline}</h2>
