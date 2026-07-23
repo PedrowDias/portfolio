@@ -84,7 +84,7 @@ export function solveBurgers(u0) {
   let u = Float64Array.from(u0)
   let t = 0
   let steps = 0
-  const maxSteps = 20000 // safety bound against pathological inputs
+  const maxSteps = 100000 // safety bound against pathological inputs — must exceed the step count needed at the highest supported resolution (roughly scales with resolution^2)
 
   while (t < T_END && steps < maxSteps) {
     const dt = computeStableDt(u, dx, T_END - t)

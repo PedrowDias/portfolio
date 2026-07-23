@@ -8,7 +8,7 @@ import { evaluateInitialCondition } from '../lib/expressionEval.js'
 import Equation from './Equation.jsx'
 import styles from './FNODemo.module.css'
 
-const RESOLUTION = 256
+const RESOLUTION = 1024
 const DEFAULT_EXPRESSION = 'sin(2*pi*x) + 0.5*cos(4*pi*x)'
 
 function buildChartData(x, u0, classical, fno) {

@@ -14,8 +14,8 @@ function MSEDemo() {
     <div className={styles.demo}>
       <p className={styles.note}>
         Real retrieval results from the trained model, precomputed offline (no live model
-        running in your browser). Each query's actual correct translation is marked below —
-        this isn't cherry-picked, the model finds it correctly across all curated examples.
+        running in your browser). Each query's actual correct translation is marked below
+        (this isn't cherry-picked, the model finds it correctly across all curated examples).
       </p>
 
       <label className={styles.selectLabel}>
