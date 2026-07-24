@@ -29,11 +29,11 @@ function Contact() {
       )}
 
       <div className={styles.content}>
-        <p className={styles.eyebrow}>05. What's Next?</p>
+        <p className={styles.eyebrow}>05. {contact.heading}</p>
         <h2 className={styles.heading}>{contact.subheading}</h2>
         <p className={styles.body}>{contact.body}</p>
         <a className={styles.cta} href={`mailto:${contact.email}`}>
-          Say Hello
+          Say Hello!
         </a>
       </div>
     </section>
