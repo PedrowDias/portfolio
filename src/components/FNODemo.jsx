@@ -1,7 +1,4 @@
 import { useState, useCallback, useEffect } from 'react'
-import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
-} from 'recharts'
 import { solveBurgers, generateRandomExpression, BURGERS_VISCOSITY } from '../lib/burgersSolver.js'
 import { runFNO, preloadModel } from '../lib/fnoInference.js'
 import { evaluateInitialCondition } from '../lib/expressionEval.js'
@@ -10,15 +7,6 @@ import styles from './FNODemo.module.css'
 
 const RESOLUTION = 1024
 const DEFAULT_EXPRESSION = 'sin(2*pi*x) + 0.5*cos(4*pi*x)'
-
-function buildChartData(x, u0, classical, fno) {
-  return x.map((xi, i) => ({
-    x: xi.toFixed(2),
-    'Initial condition': u0[i],
-    'Classical solver': classical[i],
-    'FNO prediction': fno ? fno[i] : null,
-  }))
-}
 
 function FNODemo() {
   const [expression, setExpression] = useState(DEFAULT_EXPRESSION)
@@ -35,12 +23,10 @@ function FNODemo() {
       setRunning(true)
       setError(null)
       try {
-        const x = Array.from({ length: RESOLUTION }, (_, i) => i / RESOLUTION)
-        const { solution: classical, elapsedMs: classicalMs, steps } = solveBurgers(u0)
-        const { prediction: fno, elapsedMs: fnoMs } = await runFNO(u0, RESOLUTION)
+        const { elapsedMs: classicalMs, steps } = solveBurgers(u0)
+        const { elapsedMs: fnoMs } = await runFNO(u0, RESOLUTION)
 
         setResult({
-          chartData: buildChartData(x, u0, classical, fno),
           classicalMs,
           fnoMs,
           classicalSteps: steps,
@@ -126,41 +112,21 @@ function FNODemo() {
       </div>
 
       {result && (
-        <>
-          <div className={styles.timings}>
-            <div className={styles.timingCard}>
-              <p className={styles.timingLabel}>Classical solver</p>
-              <p className={styles.timingValue}>{result.classicalMs.toFixed(2)} ms</p>
-              <p className={styles.timingSub}>{result.classicalSteps} adaptive steps</p>
-            </div>
-            <div className={styles.timingCard}>
-              <p className={styles.timingLabel}>FNO (in-browser)</p>
-              <p className={styles.timingValue}>{result.fnoMs.toFixed(2)} ms</p>
-            </div>
-            <div className={styles.timingCardHighlight}>
-              <p className={styles.timingLabel}>Speedup</p>
-              <p className={styles.timingValue}>{speedup}×</p>
-            </div>
+        <div className={styles.timings}>
+          <div className={styles.timingCard}>
+            <p className={styles.timingLabel}>Classical solver</p>
+            <p className={styles.timingValue}>{result.classicalMs.toFixed(2)} ms</p>
+            <p className={styles.timingSub}>{result.classicalSteps} adaptive steps</p>
           </div>
-
-          <div className={styles.chartWrapper}>
-            <ResponsiveContainer width="100%" height={320}>
-              <LineChart data={result.chartData}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
-                <XAxis dataKey="x" stroke="#94a3b8" tick={{ fontSize: 11 }} />
-                <YAxis stroke="#94a3b8" tick={{ fontSize: 11 }} />
-                <Tooltip
-                  contentStyle={{ backgroundColor: '#1e293b', border: '1px solid #334155' }}
-                  labelStyle={{ color: '#f1f5f9' }}
-                />
-                <Legend />
-                <Line type="monotone" dataKey="Initial condition" stroke="#94a3b8" dot={false} strokeDasharray="4 2" />
-                <Line type="monotone" dataKey="Classical solver" stroke="#f8fafc" dot={false} strokeWidth={2} />
-                <Line type="monotone" dataKey="FNO prediction" stroke="#fb7185" dot={false} strokeWidth={2} />
-              </LineChart>
-            </ResponsiveContainer>
+          <div className={styles.timingCard}>
+            <p className={styles.timingLabel}>FNO (in-browser)</p>
+            <p className={styles.timingValue}>{result.fnoMs.toFixed(2)} ms</p>
           </div>
-        </>
+          <div className={styles.timingCardHighlight}>
+            <p className={styles.timingLabel}>Speedup</p>
+            <p className={styles.timingValue}>{speedup}×</p>
+          </div>
+        </div>
       )}
     </div>
   )

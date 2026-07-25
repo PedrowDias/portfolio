@@ -13,15 +13,15 @@ export const nav = [
 export const hero = {
     greeting: 'Hi, my name is',
     name: 'Pedro Werneck!',
-    tagline: 'I like Physics and Computer\u00A0Science!',
+    tagline: 'I like Physics and Computer\u00A0Science,',
     subtitle:
-        "I'm a student at the University of Toronto, with strong interests in AI/ML\u00A0research",
+        "and very interested in pursuing AI/ML\u00A0research",
 }
 
 export const about = {
     paragraphs: [
-        "I'm a 3rd-year Physics and Computer Science double-major student at the University of Toronto (4.0 CGPA), currently a Research Intern at CERN and EPFL, working on nonlinear beam dynamics in particle accelerators.",
-        "I'm also a Research Assistant at the Dunlap Institute for Astronomy & Astrophysics, and I have some medals at national (Brazil) science and math olympiads.",
+        "I'm from Brazil! But now a 3rd-year Physics and Computer Science double-major student at the University of Toronto (4.0 CGPA), currently doing a research internship at CERN and EPFL, working on generalizing direct Vlasov solvers to nonlinear longitudinal dynamics.",
+        "I'm also a Research Assistant at the Dunlap Institute for Astronomy & Astrophysics under the supervision of Dr. Kevin McKinnon and Prof. Ting Li, and I have some medals at national (Brazil) science and math olympiads (you can see more on that below).",
     ],
     skills: [
         'Python',
@@ -31,15 +31,14 @@ export const about = {
         'JavaScript / React',
         'SQL',
         'NumPy / SciPy',
-        'HTML/CSS',
+        'HTML / CSS',
     ],
-    // Path to a profile photo — add your own image at this path in public/.
     profilePhoto: 'images/profile.jpg',
     travel: {
         paragraphs: [
-            "On a more personal note, back in Brazil, I always wanted to study abroad and do international collaborations, so having the chance to do my undergrad in Canada is a dream, and I'm extremely grateful for that. Working at CERN had been a goal of mine for years too (I even wrote about it in my university applications!), so spending this summer in Geneva has been absolutely amazing.",
-            "That internship also gave me the opportunity to travel a lot, which is probably what I love doing most in life (along with learning)! Meeting new people, experiencing different cultures and languages, visiting new places, and trying new food are some of my favorite things to do.",
-            "This is a map of the countries I've visited so far! As I saw somewhere, the goal is to make the number of countries I\u2019ve visited greater than my age.",
+            "On a more personal note, ever since high school in Brazil, I dreamed of studying abroad and doing international collaborations. So having the chance to do my undergrad in Canada has been more special than I can describe, and I'm extremely grateful for that. Also, as I even wrote about CERN in my university applications, spending this summer working here is another dream coming true!",
+            "Studying and working abroad has also given me the opportunity to travel a lot, which is probably what I love doing most in life (along with learning)! Meeting new people, experiencing different cultures and languages, visiting new places, and trying new food are some of my favorite things to do.",
+            "This is a map of the countries I've visited so far! As I saw somewhere (probably Instagram), the goal is for the \"number of countries I\u2019ve visited to always be greater than my age\"!",
         ],
     },
 }
@@ -99,7 +98,7 @@ export const skills = {
         'Four gold medals at the Brazilian Astronomy Olympiad (2020–2023), including perfect scores in 2022 and 2023',
         'Two gold and one silver medal at the National Olympiad of Science of Brazil; top 50 nationwide out of 4.88 million participants (2023)',
         'Bronze medal and honorable mention at the Brazilian Math Olympiad for Public Schools',
-        'Dean\u2019s List Scholar (2025); International Scholar, Faculty of Arts & Science (2024)',
+        'University of Toronto: Dean\u2019s List Scholar (2025); International Scholar Award (2024); Scholar at the Faculty of Arts & Science Award (2024)',
     ],
 }
 
@@ -112,7 +111,7 @@ export const projects = [
             'Implemented a Fourier Neural Operator for the 1D Burgers and 2D Navier-Stokes equations, including finite-difference and pseudo-spectral solvers, an MLP baseline, and spectral convolution layers in Fourier space.',
         results: [
             '15x lower test error than the MLP baseline (0.076 vs 1.14 relative L2)',
-            'Resolution-invariant generalization to 256-point grids trained only on 32–128 points',
+            'Resolution-invariant generalization to 1024-point grids trained only on 32–128 points',
             '21x per-sample inference speedup over classical solvers (0.6ms vs 12.65ms)',
         ],
         github: 'https://github.com/PedrowDias/Fourier-Neural-Operator',
