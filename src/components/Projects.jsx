@@ -4,6 +4,7 @@ import sectionStyles from './Section.module.css'
 import styles from './Projects.module.css'
 import FNODemo from './FNODemo.jsx'
 import MSEDemo from './MSEDemo.jsx'
+import KVStoreDiagram from './KVStoreDiagram.jsx'
 
 function Projects() {
   const [ref, inView] = useInView()
@@ -73,6 +74,7 @@ function Projects() {
             </div>
 
             {project.demoType === 'retrieval' && <MSEDemo />}
+            {project.demoType === 'architecture' && <KVStoreDiagram />}
             {project.interactive && !project.demoType && <FNODemo />}
           </article>
         ))}

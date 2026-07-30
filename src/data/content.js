@@ -104,6 +104,20 @@ export const skills = {
 
 export const projects = [
     {
+        title: 'Distributed Key-Value Store',
+        paperRef: null,
+        stack: ['Go'],
+        description:
+            "Built a distributed key-value store from scratch, including an LSM-tree storage engine (write-ahead log, memtable, SSTables, background compaction) and Raft consensus (leader election with Pre-Vote, log replication, ReadIndex, log compaction) with a custom wire protocol.",
+        results: [
+            '69.9x faster reads on a real 3-node cluster',
+            '700ms mean leader failover time with zero data loss across simulated node failures',
+        ],
+        github: 'https://github.com/PedrowDias/key-value-store',
+        interactive: true,
+        demoType: 'architecture',
+    },
+    {
         title: 'Fourier Neural Operator for PDEs',
         paperRef: 'Li et al., 2021',
         stack: ['Python', 'PyTorch', 'NumPy'],

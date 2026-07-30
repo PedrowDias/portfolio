@@ -69,9 +69,6 @@ function WorldMap() {
               onMouseLeave={() => setHovered(null)}
               onClick={() => setHovered(dot.country)}
             >
-              {/* Larger invisible circle — the actual hover/click target,
-                  since the small visible dot alone is too fiddly to hit
-                  reliably with a mouse. */}
               <circle cx={dot.x} cy={dot.y} r={4} className={styles.hitArea} />
               <circle
                 cx={dot.x}

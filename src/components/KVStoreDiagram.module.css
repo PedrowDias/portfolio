@@ -1,0 +1,117 @@
+.diagram {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: var(--spacing-sm) 0;
+}
+
+.clientBox {
+  fill: var(--color-light-navy);
+  stroke: var(--color-lightest-navy);
+  stroke-width: 1.5;
+}
+
+.clientLabel {
+  fill: var(--color-lightest-slate);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.leaderBox {
+  fill: var(--color-light-navy);
+  stroke: var(--color-green);
+  stroke-width: 2;
+}
+
+.followerBox {
+  fill: var(--color-light-navy);
+  stroke: var(--color-teal);
+  stroke-width: 1.5;
+}
+
+.nodeTitle {
+  fill: var(--color-lightest-slate);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nodeSubtitle {
+  fill: var(--color-slate);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.nodeEngine {
+  fill: var(--color-teal);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.writeArrow {
+  stroke: var(--color-green);
+  stroke-width: 1.5;
+}
+
+.writeArrowHead {
+  fill: var(--color-green);
+}
+
+.ackArrow {
+  stroke: var(--color-slate);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+}
+
+.ackArrowHead {
+  fill: var(--color-slate);
+}
+
+.replArrow {
+  stroke: var(--color-teal);
+  stroke-width: 1.5;
+}
+
+.replArrowHead {
+  fill: var(--color-teal);
+}
+
+.arrowLabel {
+  fill: var(--color-slate);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.arrowLabelAck {
+  fill: var(--color-slate);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-style: italic;
+}
+
+.legendTitle {
+  fill: var(--color-slate);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.legendBox {
+  fill: var(--color-navy);
+  stroke: var(--color-lightest-navy);
+  stroke-width: 1;
+}
+
+.legendLabel {
+  fill: var(--color-lightest-slate);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.legendArrow {
+  stroke: var(--color-slate);
+  stroke-width: 1;
+}
+
+.legendArrowHead {
+  fill: var(--color-slate);
+}
