@@ -20,7 +20,7 @@ export const hero = {
 
 export const about = {
     paragraphs: [
-        "I'm from Brazil! But now a 3rd-year Physics and Computer Science double-major student at the University of Toronto (4.0 CGPA), currently doing a research internship at CERN and EPFL, working on generalizing direct Vlasov solvers to nonlinear longitudinal dynamics.",
+        "I'm from Brazil! But now a 3rd-year Physics and Computer Science double-major student at the University of Toronto (4.0 CGPA). Last summer I did a research internship at CERN and EPFL, working on generalizing direct Vlasov solvers to nonlinear longitudinal dynamics.",
         "I'm also a Research Assistant at the Dunlap Institute for Astronomy & Astrophysics under the supervision of Dr. Kevin McKinnon and Prof. Ting Li, and I have some medals at national (Brazil) science and math olympiads (you can see more on that below).",
     ],
     skills: [
@@ -36,9 +36,27 @@ export const about = {
     profilePhoto: 'images/profile.jpg',
     travel: {
         paragraphs: [
-            "On a more personal note, ever since high school in Brazil, I dreamed of studying abroad and doing international collaborations. So having the chance to do my undergrad in Canada has been more special than I can describe, and I'm extremely grateful for that. Also, as I even wrote about CERN in my university applications, spending this summer working here is another dream coming true!",
-            "Studying and working abroad has also given me the opportunity to travel a lot, which is probably what I love doing most in life (along with learning)! Meeting new people, experiencing different cultures and languages, visiting new places, and trying new food are some of my favorite things to do.",
+            "On a more personal note, ever since high school in Brazil, I dreamed of studying abroad and doing international collaborations. So having the chance to do my undergrad in Canada has been more special than I can describe, and I'm extremely grateful for that.",
             "This is a map of the countries I've visited so far! As I saw somewhere (probably Instagram), the goal is for the \"number of countries I\u2019ve visited to always be greater than my age\"!",
+        ],
+    },
+    cern: {
+        paragraphs: [
+            "Last summer I got to spend three months at CERN, which still feels surreal (I used to write about CERN in my university applications, so actually walking into the site every morning was a dream).",
+            "Being based in Geneva also meant everything else was a train ride away, so most weekends I was somewhere new: exploring Switzerland, the French side of the border, and even Milan! These are a few photos from that summer, click through them!",
+            "Studying and working abroad has also given me the opportunity to travel a lot, which is probably what I love doing most in life (along with learning)! Meeting new people, experiencing different cultures and languages, visiting new places, and trying new food are some of my favorite things to do.",
+        ],
+        photos: [
+            { src: 'images/cern/cern-01.jpeg', caption: 'The classic sculpture in front of the globe' },
+            { src: 'images/cern/cern-02.jpeg', caption: 'CERN streets are named after physicists!' },
+            { src: 'images/cern/cern-03.jpeg', caption: 'From the weekend I spent in Milan' },
+            { src: 'images/cern/cern-04.jpeg', caption: 'The place where they literally make antimatter!!! So so cool' },
+            { src: 'images/cern/cern-05.jpeg', caption: 'The GBAR experiment inside the Antimatter Factory, used to test gravity' },
+            { src: 'images/cern/cern-06.jpeg', caption: 'Lauterbrunnen, the real-life inspiration to Rivendell!' },
+            { src: 'images/cern/cern-07.jpeg', caption: 'The Saint-Chapelle chapel in Paris, extremely beautiful' },
+            { src: 'images/cern/cern-08.jpeg', caption: 'My first hike in Switzerland (and in my life!)' },
+            { src: 'images/cern/cern-09.jpeg', caption: 'The famous Oeschinensee Lake, the most beautiful place I have ever went to' },
+            { src: 'images/cern/cern-10.jpeg', caption: 'Just a famous tower' },
         ],
     },
 }
@@ -68,7 +86,7 @@ export const experience = [
         duration: '3 months',
         location: 'Geneva, Switzerland',
         bullets: [
-            "Selected for EPFL's Excellence Research Internship Program (ERIP) in the Laboratory of Particle Accelerator Physics (LPAP), a fully funded program open to the top 10% students. Working under Dr. Nicolas Mounet in CERN's Accelerators and Beam Physics, Coherent Effects and Impedances (ABP-CEI) group",
+            "Selected for EPFL's Excellence Research Internship Program (ERIP) in the Laboratory of Particle Accelerator Physics (LPAP), a fully funded program open to the top 10% students. Worked under Dr. Nicolas Mounet and Prof. Tatiana Pieloni in CERN's Accelerators and Beam Physics, Coherent Effects and Impedances (ABP-CEI) group",
             "Generalized a direct linear Vlasov solver to nonlinear longitudinal dynamics, replacing DELPHI's closed-form Bessel-function kernels with a numerical, FFT-based evaluator for the nonlinear coupling kernel",
         ],
     },

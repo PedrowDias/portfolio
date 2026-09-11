@@ -1,0 +1,132 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+/* The deck reserves the footprint of a single photo. Cards are absolutely
+   positioned inside it, so the stack never changes the page layout as you
+   browse. Padding leaves room for the fan to poke out without clipping. */
+.deck {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 3 / 4;
+  padding: 0.75rem;
+  cursor: pointer;
+  touch-action: pan-y; /* let vertical page scroll through, we handle horizontal */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.deck:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 8px;
+  border-radius: 12px;
+}
+
+.card {
+  position: absolute;
+  inset: 0.75rem;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--color-green);
+  background: var(--color-bg, #0f172a);
+  box-shadow: 0 10px 30px -12px rgba(2, 12, 27, 0.75);
+  transform:
+    translateX(calc(var(--depth) * 7px))
+    translateY(calc(var(--depth) * -7px))
+    rotate(calc(var(--depth) * -2deg))
+    scale(calc(1 - var(--depth) * 0.03));
+  transition:
+    transform 340ms cubic-bezier(0.25, 0.8, 0.35, 1),
+    opacity 340ms ease;
+  will-change: transform;
+}
+
+/* The outgoing card: slides off to the left, tilting as it goes. */
+.cardLeaving {
+  transform: translateX(-140%) rotate(-16deg) scale(0.95);
+  opacity: 0;
+}
+
+/* Cards deeper than VISIBLE are parked invisibly behind the stack. */
+.cardHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(15%) contrast(1.05);
+  user-select: none;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem 0.75rem 0.6rem;
+  font-size: 0.78rem;
+  line-height: 1.3;
+  color: #e6f1ff;
+  background: linear-gradient(to top, rgba(2, 12, 27, 0.92), transparent);
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.arrow {
+  background: none;
+  border: 1px solid var(--color-green);
+  color: var(--color-green);
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.arrow:hover,
+.arrow:focus-visible {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+.counter {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--color-green);
+  min-width: 3.5rem;
+  text-align: center;
+}
+
+/* Respect users who've asked for less motion: keep the deck fully
+   functional, just swap the slide for a plain fade. */
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: opacity 200ms ease;
+    transform: none;
+  }
+  .cardLeaving {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .deck {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
