@@ -87,7 +87,8 @@ export const experience = [
         location: 'Geneva, Switzerland',
         bullets: [
             "Selected for EPFL's Excellence Research Internship Program (ERIP) in the Laboratory of Particle Accelerator Physics (LPAP), a fully funded program open to the top 10% students. Worked under Dr. Nicolas Mounet and Prof. Tatiana Pieloni in CERN's Accelerators and Beam Physics, Coherent Effects and Impedances (ABP-CEI) group",
-            "Generalized a direct linear Vlasov solver to nonlinear longitudinal dynamics, replacing DELPHI's closed-form Bessel-function kernels with a numerical, FFT-based evaluator for the nonlinear coupling kernel",
+            "Generalized a Vlasov beam-stability solver (DELPHI) from linear to nonlinear longitudinal motion, reproducing it to 10^-4 in the linear limit and running 27 times faster on the PS Booster benchmark, by using a numerically integrated coupling kernel and a spline-cached basis (10^-13 interpolation error)",
+            "Verified the solver to within 1% on 20+ instability cases (mode coupling, head-tail modes, feedback damper) by building an independent macroparticle benchmark in Xsuite, confirming a 6% instability-threshold shift.}",
         ],
     },
     {
